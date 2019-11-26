@@ -48,7 +48,7 @@ public void test(){
 
 对象头中就包含了记录锁的标志位。如下图：
 
-![](F:\ideaWorks\myBook\java\multithreading\images\对象头锁膨胀.png)
+![](.\images\对象头锁膨胀.png)
 
 以下是某个对象头锁的膨胀过程：
 

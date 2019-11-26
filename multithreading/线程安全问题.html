@@ -1,0 +1,757 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>线程安全问题 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">位运算</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" >
+            
+                <span>
+            
+                    
+                    位运算的应用
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">多线程</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="多线程的理解.html">
+            
+                <a href="多线程的理解.html">
+            
+                    
+                    多线程的理解
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" >
+            
+                <span>
+            
+                    
+                    多线程解决的问题
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" >
+            
+                <span>
+            
+                    
+                    多线程带来的问题
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" >
+            
+                <span>
+            
+                    
+                    多线程底层模型
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" >
+            
+                <span>
+            
+                    
+                    jdk1.5之前的实现
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.4.1" data-path="基本API.html">
+            
+                <a href="基本API.html">
+            
+                    
+                    基本API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.4.1.1" >
+            
+                <span>
+            
+                    
+                    Thread、Runnable、Callable、Future
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.1.4.2" data-path="线程安全问题.html">
+            
+                <a href="线程安全问题.html">
+            
+                    
+                    线程安全问题
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.4.2.1" >
+            
+                <span>
+            
+                    
+                    JMM
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4.2.2" >
+            
+                <span>
+            
+                    
+                    volatile
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4.2.3" >
+            
+                <span>
+            
+                    
+                    线程安全问题的解决
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4.2.4" >
+            
+                <span>
+            
+                    
+                    死锁问题
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4.3" data-path="协同机制.html">
+            
+                <a href="协同机制.html">
+            
+                    
+                    协同机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4.4" data-path="中断机制.html">
+            
+                <a href="中断机制.html">
+            
+                    
+                    中断机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5" >
+            
+                <span>
+            
+                    
+                    jdk1.5之后的设计实现
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.5.1" data-path="synchronized在jdk1.6的优化.html">
+            
+                <a href="synchronized在jdk1.6的优化.html">
+            
+                    
+                    synchronized在jdk1.6的优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5.2" data-path="JUC.html">
+            
+                <a href="JUC.html">
+            
+                    
+                    JUC包
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.5.2.1" >
+            
+                <span>
+            
+                    
+                    Callable、Future
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5.2.2" >
+            
+                <span>
+            
+                    
+                    锁相关：Lock
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5.2.3" >
+            
+                <span>
+            
+                    
+                    线程安全的容器：AtomicXXX、ConcurrentHashMap、LinkedBlockingQueue
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5.2.4" >
+            
+                <span>
+            
+                    
+                    线程池
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5.2.5" >
+            
+                <span>
+            
+                    
+                    相关工具
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >线程安全问题</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x4E00;&#x3001;&#x7EBF;&#x7A0B;&#x5B89;&#x5168;">&#x4E00;&#x3001;&#x7EBF;&#x7A0B;&#x5B89;&#x5168;</h2>
+<h3 id="&#x6982;&#x8FF0;">&#x6982;&#x8FF0;</h3>
+<p>1&#x3001;&#x5B9A;&#x4E49;</p>
+<p>&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#x662F;&#x6307;&#x4EE3;&#x7801;&#x5728;&#x591A;&#x7EBF;&#x7A0B;&#x73AF;&#x5883;&#x4E0B;&#x6267;&#x884C;&#x65F6;&#xFF0C;&#x4ECD;&#x7136;&#x53EF;&#x4EE5;&#x8868;&#x73B0;&#x51FA;&#x73B0;&#x6B63;&#x786E;&#x884C;&#x4E3A;&#x3002;</p>
+<p>&#x90A3;&#x4EE3;&#x7801;&#x4F1A;&#x5728;&#x591A;&#x7EBF;&#x7A0B;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x51FA;&#x73B0;&#x7EBF;&#x7A0B;&#x4E0D;&#x5B89;&#x5168;&#x95EE;&#x9898;&#x5462;&#xFF1F;&#x8FD9;&#x662F;&#x56E0;&#x4E3A;&#x5B58;&#x5728;<strong>&#x5171;&#x4EAB;&#x53D8;&#x91CF;</strong>&#x3002;&#x53EF;&#x4EE5;&#x53C2;&#x8003;<strong>Java&#x5185;&#x5B58;&#x6A21;&#x578B;</strong></p>
+<p>2&#x3001;&#x7EBF;&#x7A0B;&#x4E0D;&#x5B89;&#x5168;&#x884C;&#x4E3A;</p>
+<p>&#xFF08;1&#xFF09;&#x5171;&#x4EAB;&#x53D8;&#x91CF;</p>
+<p>&#x56E0;&#x4E3A;&#x5171;&#x4EAB;&#x53D8;&#x91CF;&#x800C;&#x51FA;&#x73B0;&#x7684;&#x7EBF;&#x7A0B;&#x4E0D;&#x5B89;&#x5168;&#x95EE;&#x9898;&#xFF0C;&#x4E3B;&#x8981;&#x662F;&#x56E0;&#x4E3A;&#x5BF9;&#x5171;&#x4EAB;&#x53D8;&#x91CF;&#x7684;&#x64CD;&#x4F5C;&#x662F;<strong>&#x975E;&#x539F;&#x5B50;&#x6027;</strong>&#x7684;&#xFF0C;&#x7ECF;&#x5178;&#x7684;&#x6709;&#x4FE9;&#x79CD;<code>get-do-set</code>&#x548C;<code>check-then-act</code>&#x3002;</p>
+<p>&#x5982;&#x4F55;&#x89E3;&#x51B3;&#x56E0;&#x4E3A;&#x5171;&#x4EAB;&#x53D8;&#x91CF;&#x800C;&#x51FA;&#x73B0;&#x7684;&#x7EBF;&#x7A0B;&#x4E0D;&#x5B89;&#x5168;&#x95EE;&#x9898;&#x5462;&#xFF1F;</p>
+<ul>
+<li>&#x4E0D;&#x53EF;&#x53D8;&#x5BF9;&#x8C61;&#xFF0C;&#x6BD4;&#x5982;<code>String</code>&#xFF1B;</li>
+<li>&#x5404;&#x79CD;&#x9501;&#xFF0C;&#x6BD4;&#x5982;<code>synchonized</code>&#x3001;<code>Lock</code></li>
+<li>&#x5E76;&#x53D1;&#x5DE5;&#x5177;&#x5305;&#xFF0C;&#x5373;<code>juc</code>&#x5305;</li>
+</ul>
+<p>&#xFF08;2&#xFF09;&#x6B7B;&#x9501;&#x95EE;&#x9898;</p>
+<p>&#x6B7B;&#x9501;&#x95EE;&#x9898;&#x7684;&#x5B9A;&#x4E49;&#x5C31;&#x662F;&#x4FE9;&#x4E2A;&#x7EBF;&#x7A0B;&#x5DF2;&#x7ECF;&#x5404;&#x81EA;&#x6301;&#x6709;&#x4E00;&#x4E2A;&#x9501;&#x4E86;&#xFF0C;&#x5E76;&#x4E14;&#x7B49;&#x5F85;&#x53E6;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x91CA;&#x653E;&#x9501;&#x7684;&#x73B0;&#x8C61;&#x3002;</p>
+<p>&#x4E86;&#x89E3;&#x6B7B;&#x9501;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF0C;&#x4EE5;&#x53CA;&#x9884;&#x9632;&#x6B7B;&#x9501;&#x3002;</p>
+<h3 id="&#x80CC;&#x666F;&#x77E5;&#x8BC6;">&#x80CC;&#x666F;&#x77E5;&#x8BC6;</h3>
+<h4 id="1&#x3001;java&#x5185;&#x5B58;&#x6A21;&#x578B;">1&#x3001;java&#x5185;&#x5B58;&#x6A21;&#x578B;</h4>
+<p><code>Java Memory Model</code>&#x7B80;&#x79F0;<code>JMM</code>&#xFF0C;&#x5373;<code>java&#x5185;&#x5B58;&#x6A21;&#x578B;</code>&#x3002;&#x4E0B;&#x9762;&#x6709;&#x4FE9;&#x5F20;&#x56FE;&#x4ECB;&#x7ECD;&#x4E86;&#xFF1A;</p>
+<p><img src="images/JMM01.png" alt="1574598682868"></p>
+<p>&#x6BCF;&#x4E2A;&#x7EBF;&#x7A0B;&#x90FD;&#x6709;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#x6808;&#xFF1B;&#x5806;&#x4E2D;&#x5B58;&#x653E;&#x5171;&#x4EAB;&#x7684;&#x53D8;&#x91CF;&#x3002;&#x5C31;&#x662F;&#x8FD9;&#x4E9B;&#x5806;&#x4E2D;&#x53D8;&#x91CF;&#x800C;&#x5F15;&#x53D1;&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#x95EE;&#x9898;&#x3002;</p>
+<p>&#x4F46;&#x662F;&#x4E3A;&#x4E86;&#x8FDB;&#x4E00;&#x6B65;&#x51CF;&#x5C11;<code>CPU</code>&#x4E0E;&#x5185;&#x5B58;&#x4E4B;&#x95F4;&#x901F;&#x5EA6;&#x5F97;&#x5DEE;&#x5F02;&#xFF0C;&#x516C;&#x6709;&#x53D8;&#x91CF;&#x4F1A;&#x5728;&#x6BCF;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x4E2D;&#x5B58;&#x5728;&#x79C1;&#x6709;&#x5F97;&#x526F;&#x672C;&#x3002;&#x6709;&#x65F6;&#x5019;&#x4EE3;&#x7801;&#x4F1A;&#x56E0;&#x6B64;&#x51FA;&#x73B0;&#x5F88;&#x8BE1;&#x5F02;&#x5F97;&#x60C5;&#x51B5;&#x3002;</p>
+<p><img src="images/JMM02.png" alt="1574598764309"></p>
+<p>&#x6BCF;&#x4E2A;&#x7EBF;&#x7A0B;&#x90FD;&#x4F1A;&#x6709;&#x4E00;&#x4E2A;&#x5DE5;&#x4F5C;&#x5185;&#x5B58;&#xFF0C;&#x5176;&#x5B58;&#x50A8;&#x7684;&#x662F;&#x516C;&#x6709;&#x53D8;&#x91CF;&#x7684;&#x526F;&#x672C;&#x3002;&#x5B83;&#x4F1A;&#x5B9A;&#x65F6;&#x7684;&#x4E0E;&#x4E3B;&#x5185;&#x5B58;&#x53BB;&#x540C;&#x6B65;&#x3002;&#x8FD9;&#x4E5F;&#x662F;&#x4E3A;&#x4E86;&#x63D0;&#x9AD8;CPU&#x7684;&#x8FD0;&#x884C;&#x6548;&#x7387;&#x3002; 
+&#x8FD9;&#x91CC;&#x5C31;&#x662F;&#x5BFC;&#x81F4;&#x4E00;&#x4E2A;&#x95EE;&#x9898;&#xFF1A;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x4EE5;&#x4E3A;&#x81EA;&#x5DF1;&#x4FEE;&#x6539;&#x4E86;&#x516C;&#x6709;&#x53D8;&#x91CF;&#xFF0C;&#x53E6;&#x4E00;&#x4E2A;&#x4F1A;&#x53CD;&#x5E94;&#x8FC7;&#x6765;&#x3002;&#x4F46;&#x53EF;&#x80FD;&#x5E76;&#x6CA1;&#x6709;&#x3002;&#x6BD4;&#x5982;&#x8BF4;&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Demo</span> </span>{
+
+    <span class="hljs-keyword">static</span> <span class="hljs-keyword">boolean</span> cancelled = <span class="hljs-keyword">false</span>;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> <span class="hljs-keyword">throws</span> InterruptedException </span>{
+        Thread time = <span class="hljs-keyword">new</span> Thread(() -&gt; {
+                <span class="hljs-keyword">while</span> (<span class="hljs-keyword">true</span>){
+
+                    <span class="hljs-keyword">if</span> (cancelled){
+                        <span class="hljs-comment">// &#x53D6;&#x6D88;&#x81EA;&#x5DF1;&#x505A;&#x7684;&#x4E8B;&#x60C5;</span>
+                        <span class="hljs-keyword">break</span>;
+                    }
+
+                    <span class="hljs-keyword">try</span> {
+                        Thread.sleep(<span class="hljs-number">5000</span>);
+                    } <span class="hljs-keyword">catch</span> (InterruptedException e) {
+                        Thread.currentThread().interrupt();
+                        e.printStackTrace();
+                    }
+                    <span class="hljs-comment">// &#x505A;&#x4E00;&#x4E9B;&#x5B9A;&#x65F6;&#x5668;&#x76F8;&#x5173;&#x7684;&#x5DE5;&#x4F5C;</span>
+
+                }
+        });
+
+        cancelled = <span class="hljs-keyword">true</span>;
+        time.start();
+    }
+}
+</code></pre>
+<p>&#x6BD4;&#x5982;&#x8BF4;&#x8FD9;&#x4E2A;&#x5B50;&#x7EBF;&#x7A0B;&#x5728;&#x83B7;&#x53D6;&#x5171;&#x4EAB;&#x53D8;&#x91CF;<code>cancelled</code>&#xFF0C;&#x5047;&#x8BBE;&#x5B83;&#x53EA;&#x4ECE;&#x81EA;&#x5DF1;&#x7684;&#x5DE5;&#x4F5C;&#x5185;&#x5B58;&#x8BFB;&#x53D6;&#x8FD9;&#x4E2A;<code>cancelled</code>&#xFF0C;&#x8FD9;&#x5C31;&#x5B8C;&#x4E86;&#x5B83;&#x76F4;&#x63A5;&#x6267;&#x884C;&#x5B9A;&#x65F6;&#x5668;&#x5DE5;&#x4F5C;&#xFF0C;&#x4F46;&#x662F;&#x5176;&#x5B9E;&#x6211;&#x4EEC;&#x4E1A;&#x52A1;&#x4E0A;&#x4E5F;&#x53D6;&#x6D88;&#x8FD9;&#x4E2A;&#x3002;</p>
+<h4 id="2&#x3001;volatile">2&#x3001;volatile</h4>
+<p>&#x4E0A;&#x9762;&#x7684;&#x95EE;&#x9898;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>volatile</code>&#x8FD9;&#x4E2A;&#x5173;&#x952E;&#x5B57;&#x6765;&#x89E3;&#x51B3;&#x7684;&#x3002;&#x5B83;&#x63D0;&#x4F9B;&#x4E86;&#xFF1A;
+&#xFF08;1&#xFF09;&#x53EF;&#x89C1;&#x6027;&#xFF0C;&#x5E76;&#x975E;&#x539F;&#x5B50;&#x6027;</p>
+<p>&#x53EF;&#x89C1;&#x6027;&#x662F;&#x6307;&#x7EBF;&#x7A0B;&#x5728;&#x64CD;&#x4F5C;&#x5171;&#x4EAB;&#x53D8;&#x91CF;&#x5F97;&#x65F6;&#x5019;&#xFF0C;&#x4F1A;&#x76F4;&#x63A5;&#x53BB;&#x4E3B;&#x5185;&#x5B58;&#x53BB;&#x64CD;&#x4F5C;&#xFF0C;&#x4E0D;&#x4F1A;&#x53BB;&#x7EBF;&#x7A0B;&#x5F97;&#x5DE5;&#x4F5C;&#x5185;&#x5B58;&#x64CD;&#x4F5C;&#x3002;&#x53EF;&#x89C1;&#xFF0C;&#x89C1;&#x7684;&#x662F;&#x7EBF;&#x7A0B;&#x5BF9;&#x4E3B;&#x5185;&#x5B58;&#x4E2D;&#x7684;&#x5171;&#x4EAB;&#x53D8;&#x91CF;&#x3002;</p>
+<p>&#x6807;&#x660E;<code>volatile</code>&#x7684;&#x53D8;&#x91CF;&#x4F1A;&#x76F4;&#x63A5;&#x64CD;&#x4F5C;&#x4E3B;&#x5185;&#x5B58;&#x53D8;&#x91CF;&#xFF0C;&#x4E0D;&#x4F1A;&#x53BB;&#x5904;&#x7406;&#x7EBF;&#x7A0B;&#x5DE5;&#x4F5C;&#x5185;&#x5B58;&#x7684;&#x53D8;&#x91CF;&#x503C;&#x3002;</p>
+<p>&#xFF08;2&#xFF09;&#x7981;&#x6B62;&#x6307;&#x4EE4;&#x91CD;&#x6392;</p>
+<ul>
+<li>&#x4EC0;&#x4E48;&#x662F;&#x6307;&#x4EE4;&#x91CD;&#x6392;&#xFF1F;</li>
+</ul>
+<p>&#x7F16;&#x8BD1;&#x5668;&#x548C;&#x5904;&#x7406;&#x5668;&#x90FD;&#x53EF;&#x80FD;&#x5BF9;&#x6307;&#x4EE4;&#x8FDB;&#x884C;&#x91CD;&#x6392;&#xFF0C;&#x5BFC;&#x81F4;&#x95EE;&#x9898; &#x3002;&#x6307;&#x4EE4;&#x91CD;&#x6392;&#x662F;&#x5728;cpu&#x8FD0;&#x884C;&#x6307;&#x4EE4;&#x65F6;&#x53D1;&#x751F;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x5B83;&#x4F1A;&#x539F;&#x6765;&#x5C06;&#x67D0;&#x4E9B;&#x4E0D;&#x5F71;&#x54CD;&#x6267;&#x884C;&#x987A;&#x5E8F;&#x7684;&#x6307;&#x4EE4;&#x8FDB;&#x884C;&#x91CD;&#x65B0;&#x6392;&#x5217;&#xFF0C;&#x4EE5;&#x6B64;&#x6765;&#x4F18;&#x5316;&#x4EE3;&#x7801;&#x6267;&#x884C;&#x6548;&#x7387;&#x3002;&#x6BD4;&#x5982;&#xFF1A; </p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Demo</span> </span>{
+
+    <span class="hljs-keyword">static</span> <span class="hljs-keyword">boolean</span> initializationFinished  = <span class="hljs-keyword">false</span>;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+        init();
+        initializationFinished = <span class="hljs-keyword">true</span>;
+    }
+}
+</code></pre>
+<p>&#x5F53;&#x7F16;&#x8BD1;&#x5668;&#x8BA4;&#x4E3A;&#x8FD9;&#x4FE9;&#x6761;&#x8BED;&#x53E5;&#x76F4;&#x63A5;&#x987A;&#x5E8F;&#x5E76;&#x6CA1;&#x6709;&#x76F4;&#x63A5;&#x5173;&#x7CFB;&#xFF0C;&#x6240;&#x4EE5;&#x5B83;&#x53EF;&#x80FD;&#x628A;&#x4ED6;&#x4EEC;&#x4F18;&#x5316;&#x6210;&#xFF1A;</p>
+<pre><code class="lang-java">initializationFinished = <span class="hljs-keyword">true</span>;
+init();
+</code></pre>
+<p>&#x4F46;&#x8FD9;&#x5BF9;&#x4E1A;&#x52A1;&#x6765;&#x8BF4;&#xFF0C;&#x5C31;&#x662F;&#x6709;&#x95EE;&#x9898;&#xFF0C;&#x53EF;&#x80FD;&#x4F1A;&#x4EA7;&#x751F;&#x83AB;&#x540D;&#x5947;&#x5999;&#x7684;&#x9519;&#x8BEF;&#x3002;&#x6BD4;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Demo</span> </span>{
+
+    <span class="hljs-keyword">static</span> <span class="hljs-keyword">boolean</span> initializationFinished  = <span class="hljs-keyword">false</span>;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+        init();
+        initializationFinished = <span class="hljs-keyword">true</span>;
+
+        <span class="hljs-keyword">if</span> (initializationFinished){
+            <span class="hljs-comment">//&#x6267;&#x884C;&#x521D;&#x59CB;&#x5316;&#x4E4B;&#x540E;&#x7684;&#x64CD;&#x4F5C;    </span>
+        }
+    }
+}
+</code></pre>
+<p>&#x7531;&#x4E8E;&#x6307;&#x4EE4;&#x91CD;&#x6392;&#x662F;&#x5728;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x4E0A;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x5982;&#x679C;&#x4E3B;&#x7EBF;&#x7A0B;&#x5148;&#x4FEE;&#x6539;&#x4E86;<code>initializationFinished</code>&#x53D8;&#x91CF;&#xFF0C;&#x5B50;&#x7EBF;&#x7A0B;&#x6267;&#x884C;&#x7684;&#x903B;&#x8F91;&#x987A;&#x5E8F;&#x5C31;&#x4E0D;&#x5BF9;&#x4E86;&#x3002;&#x8FD9;&#x91CC;&#x5C31;&#x53D1;&#x751F;&#x4E3B;&#x7EBF;&#x7A0B;&#x8FD8;&#x6CA1;&#x6267;&#x884C;&#x5B8C;&#x521D;&#x59CB;&#x5316;&#x65B9;&#x6CD5;&#xFF0C;&#x5B50;&#x7EBF;&#x7A0B;&#x5C31;&#x5DF2;&#x7ECF;&#x5728;&#x505A;&#x521D;&#x59CB;&#x5316;&#x540E;&#x7684;&#x65B9;&#x6CD5;&#x4E86;&#x3002;</p>
+<p>&#xFF08;3&#xFF09;&#x6CE8;&#x610F;</p>
+<p>&#x5F53;&#x4F7F;&#x7528;&#x5176;&#x4ED6;&#x540C;&#x6B65;&#x624B;&#x6BB5;&#x7684;&#x8BDD;&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;<code>synchronized</code>&#x3001;<code>Lock</code>&#x3002;&#x8FD9;&#x65F6;&#x5019;&#x5C31;&#x6CA1;&#x5FC5;&#x8981;&#x4F7F;&#x7528;<code>volatitle</code>&#x3002;<code>synchronized&#x3001;Lock</code>&#x5C5E;&#x4E8E;&#x66F4;&#x5F3A;&#x7684;&#x540C;&#x6B65;&#x624B;&#x6BB5;&#x3001;&#x5B83;&#x4F1A;&#x4EA7;&#x751F;&#x53EF;&#x89C1;&#x6027;&#x548C;&#x7981;&#x6B62;&#x6307;&#x4EE4;&#x91CD;&#x6392;&#x7684;&#x6548;&#x679C;</p>
+<h3 id="&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#x95EE;&#x9898;">&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#x95EE;&#x9898;</h3>
+<h4 id="1&#x3001;&#x975E;&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#x7684;&#x64CD;&#x4F5C;">1&#x3001;&#x975E;&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#x7684;&#x64CD;&#x4F5C;</h4>
+<p>&#x9488;&#x5BF9;&#x4E8E;&#x5171;&#x4EAB;&#x53D8;&#x91CF;&#x800C;&#x5F15;&#x51FA;&#x7684;&#x975E;&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#x64CD;&#x4F5C;&#xFF0C;&#x90FD;&#x662F;&#x7531;&#x4E8E;&#x5BF9;&#x5171;&#x4EAB;&#x53D8;&#x91CF;&#x7684;&#x64CD;&#x4F5C;&#x662F;<strong>&#x975E;&#x539F;&#x5B50;&#x6027;&#x7684;</strong>&#x3002;&#x5927;&#x6982;&#x6709;&#x4FE9;&#x79CD;&#x6A21;&#x5F0F;&#xFF1A;</p>
+<ul>
+<li><code>get-do-set</code></li>
+<li><code>check-then-act</code></li>
+</ul>
+<p>&#xFF08;1&#xFF09;<code>get-do-set</code>&#x95EE;&#x9898;</p>
+<pre><code class="lang-java">    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> globalI = <span class="hljs-number">0</span>;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">3</span>; i++) {
+            <span class="hljs-keyword">new</span> Thread(() -&gt; globalI++).start();
+        }
+    }
+</code></pre>
+<p>&#x8FD9;&#x91CC;&#x7684;&#x95EE;&#x9898;&#x662F;<code>globalI++</code>&#x8FD9;&#x4E2A;&#x64CD;&#x4F5C;&#x4E0D;&#x662F;&#x539F;&#x5B50;&#x7684;&#xFF0C;&#x5B83;&#x4F1A;&#x5206;&#x6210;&#x4E09;&#x6B65;&#x5B8C;&#x6210;&#x3002;</p>
+<p>&#xFF08;2&#xFF09;<code>check-then-act</code>&#x95EE;&#x9898;</p>
+<pre><code class="lang-java">    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> Map&lt;String, Object&gt; values = <span class="hljs-keyword">new</span> ConcurrentHashMap&lt;&gt;();
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">3</span>; i++) {
+            <span class="hljs-keyword">new</span> Thread(() -&gt; {
+                <span class="hljs-keyword">if</span> (!values.containsKey(<span class="hljs-string">&quot;key&quot;</span>)){
+                    values.put(<span class="hljs-string">&quot;key&quot;</span>,<span class="hljs-string">&quot;value&quot;</span>);
+                }
+            }).start();
+        }
+    }
+</code></pre>
+<p>&#x770B;&#x770B;&#xFF0C;&#x5982;&#x679C;&#x64CD;&#x4F5C;&#x662F;&#x975E;&#x539F;&#x5B50;&#x7684;&#x8BDD;&#xFF0C;&#x5373;&#x4F7F;&#x662F;&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#x7684;&#x5BB9;&#x5668;&#x4E5F;&#x4E0D;&#x7BA1;&#x7528;&#x3002;&#x8FD9;&#x91CC;&#x5C31;&#x662F;&#x5178;&#x578B;&#x7684;<code>check-then-do</code>&#xFF0C;&#x5C3D;&#x7BA1;&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#x7684;&#x5BB9;&#x5668;&#x7684;&#x6240;&#x6709;&#x65B9;&#x6CD5;&#x90FD;&#x662F;&#x539F;&#x5B50;&#x7684;&#xFF0C;&#x4F46;&#x4FE9;&#x4E2A;&#x539F;&#x5B50;&#x5728;&#x4E00;&#x8D77;&#x5C31;&#x4E0D;&#x662F;&#x539F;&#x5B50;&#x7684;&#x4E86;&#x3002;&#x8FD9;&#x91CC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>putIfAbsent()</code>&#x65B9;&#x6CD5;&#x3002;</p>
+<h4 id="2&#x3001;&#x5982;&#x4F55;&#x89E3;&#x51B3;">2&#x3001;&#x5982;&#x4F55;&#x89E3;&#x51B3;</h4>
+<p>&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x5F88;&#x7B80;&#x5355;&#xFF0C;&#x5C31;&#x662F;&#x8BA9;&#x975E;&#x539F;&#x5B50;&#x64CD;&#x4F5C;&#x53D8;&#x6210;&#x539F;&#x5B50;&#x64CD;&#x4F5C;&#x3002;&#x8FD9;&#x91CC;&#x6709;&#x4FE9;&#x79CD;&#x65B9;&#x5F0F;&#xFF1A;</p>
+<ul>
+<li>&#x4F7F;&#x7528;&#x4E0D;&#x53EF;&#x53D8;&#x5BF9;&#x8C61;&#xFF1F;&#xFF1F;&#xFF1F;&#x8FD9;&#x662F;&#x4EC0;&#x4E48;&#x610F;&#x601D;&#xFF0C;<code>final</code>&#x5173;&#x952E;&#x5B57;&#x4E5F;&#x6709;&#x4F5C;&#x7528;&#xFF0C;&#x60CA;&#x4E86;</li>
+<li>&#x4F7F;&#x7528;&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#x5BB9;&#x5668;&#x3002;&#x6BD4;&#x5982;<code>juc</code>&#x5305;&#x4E0B;&#x7684;&#x7C7B;</li>
+<li>&#x4F7F;&#x7528;&#x9501;&#xFF08;<code>synchonized</code>&#x3001;<code>Lock</code>&#xFF09;</li>
+</ul>
+<h3 id="&#x6B7B;&#x9501;&#x95EE;&#x9898;">&#x6B7B;&#x9501;&#x95EE;&#x9898;</h3>
+<h4 id="1&#x3001;&#x5B9A;&#x4E49;">1&#x3001;&#x5B9A;&#x4E49;</h4>
+<p>&#x4FE9;&#x4E2A;&#x7EBF;&#x7A0B;&#x90FD;&#x6301;&#x6709;&#x4E00;&#x4E2A;&#x9501;&#xFF0C;&#x5E76;&#x4E14;&#x90FD;&#x5728;&#x7B49;&#x5230;&#x5BF9;&#x65B9;&#x91CA;&#x653E;&#x9501;&#x7684;&#x72B6;&#x6001;&#x3002;&#x79F0;&#x4E4B;&#x4E3A;&#x6B7B;&#x9501;&#x3002;&#x5982;&#x4F55;&#x4EA7;&#x751F;&#x4E00;&#x4E2A;&#x6B7B;&#x9501;&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Demo</span> </span>{
+
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> Object lock1 = <span class="hljs-keyword">new</span> Object();
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> Object lock2 = <span class="hljs-keyword">new</span> Object();
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+
+        <span class="hljs-keyword">new</span> Thread(() -&gt; {
+            <span class="hljs-keyword">synchronized</span> (lock1){
+                <span class="hljs-keyword">try</span> {
+                    Thread.sleep(<span class="hljs-number">5000</span>);
+
+                    <span class="hljs-keyword">synchronized</span> (lock2){
+
+                    }
+                } <span class="hljs-keyword">catch</span> (InterruptedException e) {
+                    Thread.currentThread().interrupt();
+                    e.printStackTrace();
+                }
+            }
+        }).start();
+
+        <span class="hljs-keyword">synchronized</span> (lock2){
+            <span class="hljs-keyword">try</span> {
+                Thread.sleep(<span class="hljs-number">5000</span>);
+
+                <span class="hljs-keyword">synchronized</span> (lock1){
+
+                }
+            } <span class="hljs-keyword">catch</span> (InterruptedException e) {
+                Thread.currentThread().interrupt();
+                e.printStackTrace();
+            }
+        }
+    }
+}
+</code></pre>
+<h4 id="2&#x3001;&#x78B0;&#x5230;&#x6B7B;&#x9501;&#x95EE;&#x9898;&#x5982;&#x4F55;&#x6392;&#x67E5;">2&#x3001;&#x78B0;&#x5230;&#x6B7B;&#x9501;&#x95EE;&#x9898;&#x5982;&#x4F55;&#x6392;&#x67E5;</h4>
+<p>&#x7A0B;&#x5E8F;&#x6B7B;&#x9501;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x7A0B;&#x5E8F;&#x4F1A;&#x5904;&#x4E8E;&#x9759;&#x6B62;&#x7684;&#x72B6;&#x6001;&#x3002;&#x5B83;&#x4EC0;&#x4E48;&#x90FD;&#x505A;&#x4E0D;&#x4E86;&#xFF0C;&#x8DDF;&#x6B7B;&#x4E86;&#x4F3C;&#x7684;&#x3002;&#x6392;&#x67E5;&#xFF1A;</p>
+<ul>
+<li><code>jps</code> + <code>jstack</code></li>
+<li>&#x7ED3;&#x5408;&#x6E90;&#x4EE3;&#x7801;</li>
+<li><code>Object.wait()</code> + <code>Object.notify()</code>&#x7B49;&#x5F85;&#x5524;&#x9192;&#x673A;&#x5236;</li>
+<li><code>Lock</code>&#x3001;<code>Condition</code></li>
+</ul>
+<h4 id="3&#x3001;&#x5982;&#x4F55;&#x907F;&#x514D;&#x6B7B;&#x9501;">3&#x3001;&#x5982;&#x4F55;&#x907F;&#x514D;&#x6B7B;&#x9501;</h4>
+<p>&#x5176;&#x5B9E;&#x6B7B;&#x9501;&#x4EA7;&#x751F;&#x7684;&#x6240;&#x6709;&#x539F;&#x56E0;&#x90FD;&#x662F;&#x591A;&#x4E2A;&#x7EBF;&#x7A0B;&#x5728;&#x83B7;&#x53D6;&#x9501;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6CA1;&#x6709;&#x4EE5;&#x76F8;&#x540C;&#x7684;&#x987A;&#x5E8F;&#x83B7;&#x53D6;&#x9501;&#x3002;&#x6240;&#x4EE5;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x4E5F;&#x5F88;&#x7B80;&#x5355;&#xFF0C;<strong>&#x83B7;&#x53D6;&#x76F8;&#x540C;&#x9501;&#x7684;&#x7EBF;&#x7A0B;&#x8981;&#x4EE5;&#x76F8;&#x540C;&#x987A;&#x5E8F;&#x83B7;&#x53D6;&#x9501;</strong>&#x3002;</p>
+<p>&#x4F46;&#x662F;&#x5B9E;&#x9645;&#x5F00;&#x53D1;&#x4E2D;&#xFF0C;&#x7531;&#x4E8E;&#x4EE3;&#x7801;&#x8FC7;&#x4E8E;&#x590D;&#x6742;&#xFF0C;&#x4E00;&#x822C;&#x65E0;&#x6CD5;&#x5728;&#x7F16;&#x7801;&#x548C;&#x4EE3;&#x7801;&#x5BA1;&#x67E5;&#x9636;&#x6BB5;&#x5C31;&#x907F;&#x514D;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x3002;&#x53EA;&#x6709;&#x7B49;&#x62A5;&#x9519;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x518D;&#x53BB;&#x5904;&#x7406;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"线程安全问题","level":"3.1.4.2","depth":3,"next":{"title":"JMM","level":"3.1.4.2.1","depth":4,"ref":"","articles":[]},"previous":{"title":"Thread、Runnable、Callable、Future","level":"3.1.4.1.1","depth":4,"ref":"","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"multithreading/线程安全问题.md","mtime":"2019-11-26T08:03:42.201Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-11-26T08:24:02.919Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

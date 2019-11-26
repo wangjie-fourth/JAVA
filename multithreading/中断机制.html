@@ -1,0 +1,623 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>中断机制 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="协同机制.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">位运算</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" >
+            
+                <span>
+            
+                    
+                    位运算的应用
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">多线程</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="多线程的理解.html">
+            
+                <a href="多线程的理解.html">
+            
+                    
+                    多线程的理解
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" >
+            
+                <span>
+            
+                    
+                    多线程解决的问题
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" >
+            
+                <span>
+            
+                    
+                    多线程带来的问题
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" >
+            
+                <span>
+            
+                    
+                    多线程底层模型
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" >
+            
+                <span>
+            
+                    
+                    jdk1.5之前的实现
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.4.1" data-path="基本API.html">
+            
+                <a href="基本API.html">
+            
+                    
+                    基本API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.4.1.1" >
+            
+                <span>
+            
+                    
+                    Thread、Runnable、Callable、Future
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4.2" data-path="线程安全问题.html">
+            
+                <a href="线程安全问题.html">
+            
+                    
+                    线程安全问题
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.4.2.1" >
+            
+                <span>
+            
+                    
+                    JMM
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4.2.2" >
+            
+                <span>
+            
+                    
+                    volatile
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4.2.3" >
+            
+                <span>
+            
+                    
+                    线程安全问题的解决
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4.2.4" >
+            
+                <span>
+            
+                    
+                    死锁问题
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4.3" data-path="协同机制.html">
+            
+                <a href="协同机制.html">
+            
+                    
+                    协同机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.1.4.4" data-path="中断机制.html">
+            
+                <a href="中断机制.html">
+            
+                    
+                    中断机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5" >
+            
+                <span>
+            
+                    
+                    jdk1.5之后的设计实现
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.5.1" data-path="synchronized在jdk1.6的优化.html">
+            
+                <a href="synchronized在jdk1.6的优化.html">
+            
+                    
+                    synchronized在jdk1.6的优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5.2" data-path="JUC.html">
+            
+                <a href="JUC.html">
+            
+                    
+                    JUC包
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.5.2.1" >
+            
+                <span>
+            
+                    
+                    Callable、Future
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5.2.2" >
+            
+                <span>
+            
+                    
+                    锁相关：Lock
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5.2.3" >
+            
+                <span>
+            
+                    
+                    线程安全的容器：AtomicXXX、ConcurrentHashMap、LinkedBlockingQueue
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5.2.4" >
+            
+                <span>
+            
+                    
+                    线程池
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5.2.5" >
+            
+                <span>
+            
+                    
+                    相关工具
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >中断机制</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x4E09;&#x3001;&#x4E2D;&#x65AD;&#x673A;&#x5236;&#xFF1A;interruptedexception">&#x4E09;&#x3001;&#x4E2D;&#x65AD;&#x673A;&#x5236;&#xFF1A;InterruptedException</h2>
+<p>&#x591A;&#x7EBF;&#x7A0B;&#x4E2D;&#x67D0;&#x4E9B;&#x4EFB;&#x52A1;&#x53EF;&#x80FD;&#x4F1A;&#x88AB;&#x6267;&#x884C;&#x5F88;&#x8017;&#x65F6;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x4ECE;&#x800C;&#x5BFC;&#x81F4;&#x8BE5;&#x7EBF;&#x7A0B;&#x5904;&#x4E8E;&#x963B;&#x585E;&#x7684;&#x72B6;&#x6001;&#x3002;&#x5728;&#x67D0;&#x4E9B;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6211;&#x4EEC;&#x60F3;&#x53D6;&#x6D88;&#x8FD9;&#x4E2A;&#x7EBF;&#x7A0B;&#x7684;&#x64CD;&#x4F5C;&#x3002;&#x8FD9;&#x5C31;&#x662F;&#x4E2D;&#x65AD;&#x673A;&#x5236;&#x3002;</p>
+<p>&#x4E2D;&#x65AD;&#x673A;&#x5236;&#x7684;&#x8BBE;&#x8BA1;&#x539F;&#x7406;&#x4E5F;&#x5F88;&#x7B80;&#x5355;&#xFF0C;&#x5C31;&#x662F;&#x5728;<code>Thread</code>&#x4E2D;&#x8BBE;&#x7F6E;&#x4E00;&#x4E2A;&#x6807;&#x5FD7;&#x4F4D;&#x3002;</p>
+<pre><code class="lang-java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">interrupt</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span> != Thread.currentThread())
+        checkAccess();
+
+    <span class="hljs-keyword">synchronized</span> (blockerLock) {
+        Interruptible b = blocker;
+        <span class="hljs-keyword">if</span> (b != <span class="hljs-keyword">null</span>) {
+            interrupt0();           <span class="hljs-comment">// Just to set the interrupt flag</span>
+            b.interrupt(<span class="hljs-keyword">this</span>);
+            <span class="hljs-keyword">return</span>;
+        }
+    }
+    interrupt0();
+}
+</code></pre>
+<p>&#x5173;&#x4E8E;<strong>&#x4E2D;&#x65AD;&#x673A;&#x5236;</strong>&#xFF0C;&#x6709;&#x4E00;&#x4E2A;&#x5F88;&#x7ECF;&#x5178;&#x7684;&#x95EE;&#x9898;&#xFF1A;&#x4EFB;&#x4F55;&#x7EBF;&#x7A0B;&#x90FD;&#x53EF;&#x4EE5;&#x88AB;&#x4E2D;&#x65AD;&#x5417;&#xFF1F;</p>
+<p>&#x7B54;&#x6848;&#x662F;<code>No</code>&#x3002;&#x4E3E;&#x4E2A;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-java">    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> <span class="hljs-keyword">throws</span> InterruptedException </span>{
+        Thread newThread = <span class="hljs-keyword">new</span> Thread(() -&gt; {
+            <span class="hljs-keyword">try</span> {
+                <span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>;
+                <span class="hljs-keyword">while</span> (<span class="hljs-keyword">true</span>) {
+                    doSomething();
+                    i++;
+                }
+            } <span class="hljs-keyword">catch</span> (InterruptedException e) {
+                System.out.println(<span class="hljs-string">&quot;this thread are interrupted&quot;</span>);
+                e.printStackTrace();
+            }
+        });
+        newThread.start();
+
+        Thread.sleep(<span class="hljs-number">5000</span>);
+        newThread.interrupt();
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">doSomething</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> InterruptedException </span>{
+    }
+</code></pre>
+<p>&#x4F60;&#x4F1A;&#x53D1;&#x73B0;&#x8FD9;&#x4E2A;&#x65B0;&#x7EBF;&#x7A0B;&#x4E0D;&#x4F1A;&#x88AB;&#x4E2D;&#x65AD;&#x3002;&#x8FD9;&#x662F;&#x56E0;&#x4E3A;<strong>&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x662F;&#x5426;&#x88AB;&#x4E2D;&#x65AD;&#xFF0C;&#x53D6;&#x51B3;&#x5B83;&#x81EA;&#x5DF1;&#x7684;&#x6267;&#x884C;&#x7B56;&#x7565;</strong>&#x3002;&#x4E00;&#x822C;&#x6765;&#x8BF4;&#xFF0C;<code>jdk</code>&#x4E2D;&#x8017;&#x65F6;&#x6BD4;&#x8F83;&#x4E45;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x90FD;&#x4F1A;&#x629B;&#x51FA;<code>InterruptedException</code>&#x5F02;&#x5E38;&#xFF0C;&#x4EE5;&#x6B64;&#x6765;&#x54CD;&#x5E94;&#x7EBF;&#x7A0B;&#x4E2D;&#x65AD;&#x3002;</p>
+<p>3&#x3001;&#x4E2D;&#x65AD;&#x64CD;&#x4F5C;&#x7684;&#x6267;&#x884C;&#x5EFA;&#x8BAE;</p>
+<ul>
+<li><code>Thread</code>&#x5904;&#x7406;<code>InterruptedException</code>&#x7684;&#x64CD;&#x4F5C;&#xFF1A;&#x8BBE;&#x7F6E;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#x7684;&#x6807;&#x5FD7;&#x4F4D;</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="协同机制.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 协同机制">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"中断机制","level":"3.1.4.4","depth":3,"next":{"title":"jdk1.5之后的设计实现","level":"3.1.5","depth":2,"ref":"","articles":[{"title":"synchronized在jdk1.6的优化","level":"3.1.5.1","depth":3,"path":"multithreading/synchronized在jdk1.6的优化.md","ref":"./multithreading/synchronized在jdk1.6的优化.md","articles":[]},{"title":"JUC包","level":"3.1.5.2","depth":3,"path":"multithreading/JUC.md","ref":"./multithreading/JUC.md","articles":[{"title":"Callable、Future","level":"3.1.5.2.1","depth":4,"ref":"","articles":[]},{"title":"锁相关：Lock","level":"3.1.5.2.2","depth":4,"ref":"","articles":[]},{"title":"线程安全的容器：AtomicXXX、ConcurrentHashMap、LinkedBlockingQueue","level":"3.1.5.2.3","depth":4,"ref":"","articles":[]},{"title":"线程池","level":"3.1.5.2.4","depth":4,"ref":"","articles":[]},{"title":"相关工具","level":"3.1.5.2.5","depth":4,"ref":"","articles":[]}]}]},"previous":{"title":"协同机制","level":"3.1.4.3","depth":3,"path":"multithreading/协同机制.md","ref":"./multithreading/协同机制.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"multithreading/中断机制.md","mtime":"2019-11-26T08:01:45.227Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-11-26T08:24:02.919Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

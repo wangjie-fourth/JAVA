@@ -1,0 +1,718 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>JUC包 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="synchronized在jdk1.6的优化.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">位运算</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" >
+            
+                <span>
+            
+                    
+                    位运算的应用
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">多线程</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="多线程的理解.html">
+            
+                <a href="多线程的理解.html">
+            
+                    
+                    多线程的理解
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" >
+            
+                <span>
+            
+                    
+                    多线程解决的问题
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" >
+            
+                <span>
+            
+                    
+                    多线程带来的问题
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" >
+            
+                <span>
+            
+                    
+                    多线程底层模型
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" >
+            
+                <span>
+            
+                    
+                    jdk1.5之前的实现
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.4.1" data-path="基本API.html">
+            
+                <a href="基本API.html">
+            
+                    
+                    基本API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.4.1.1" >
+            
+                <span>
+            
+                    
+                    Thread、Runnable、Callable、Future
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4.2" data-path="线程安全问题.html">
+            
+                <a href="线程安全问题.html">
+            
+                    
+                    线程安全问题
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.4.2.1" >
+            
+                <span>
+            
+                    
+                    JMM
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4.2.2" >
+            
+                <span>
+            
+                    
+                    volatile
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4.2.3" >
+            
+                <span>
+            
+                    
+                    线程安全问题的解决
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4.2.4" >
+            
+                <span>
+            
+                    
+                    死锁问题
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4.3" data-path="协同机制.html">
+            
+                <a href="协同机制.html">
+            
+                    
+                    协同机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4.4" data-path="中断机制.html">
+            
+                <a href="中断机制.html">
+            
+                    
+                    中断机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5" >
+            
+                <span>
+            
+                    
+                    jdk1.5之后的设计实现
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.5.1" data-path="synchronized在jdk1.6的优化.html">
+            
+                <a href="synchronized在jdk1.6的优化.html">
+            
+                    
+                    synchronized在jdk1.6的优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.1.5.2" data-path="JUC.html">
+            
+                <a href="JUC.html">
+            
+                    
+                    JUC包
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.5.2.1" >
+            
+                <span>
+            
+                    
+                    Callable、Future
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5.2.2" >
+            
+                <span>
+            
+                    
+                    锁相关：Lock
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5.2.3" >
+            
+                <span>
+            
+                    
+                    线程安全的容器：AtomicXXX、ConcurrentHashMap、LinkedBlockingQueue
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5.2.4" >
+            
+                <span>
+            
+                    
+                    线程池
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5.2.5" >
+            
+                <span>
+            
+                    
+                    相关工具
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >JUC包</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>&#x591A;&#x7EBF;&#x7A0B;&#x4E00;&#x76F4;&#x662F;<code>java</code>&#x7F16;&#x7A0B;&#x7684;&#x4E00;&#x4E2A;&#x96BE;&#x70B9;&#xFF0C;&#x56E0;&#x4E3A;&#x591A;&#x7EBF;&#x7A0B;&#x96BE;&#x7406;&#x89E3;&#x3001;&#x96BE;&#x6D4B;&#x8BD5;&#x3001;&#x4F7F;&#x7528;&#x56F0;&#x96BE;&#x3002;</p>
+<p>&#x5728;&#x4EE3;&#x7801;&#x4F7F;&#x7528;&#x4E0A;&#xFF1A;</p>
+<ul>
+<li>&#x5B89;&#x5168;&#xFF1A;&#x6211;&#x4EEC;&#x8981;&#x4E00;&#x76F4;&#x4E3B;&#x8981;&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#x95EE;&#x9898;</li>
+<li>&#x534F;&#x540C;&#xFF1A;<code>java</code>&#x539F;&#x751F;&#x7684;&#x534F;&#x540C;&#x673A;&#x5236; - &#x7B49;&#x5F85;&#x5524;&#x9192;&#x673A;&#x5236;</li>
+</ul>
+<p>&#x5728;&#x6613;&#x7528;&#x6027;&#x4E0A;&#xFF1A;</p>
+<p>&#x5728;<code>jdk1.5</code>&#x4E4B;&#x524D;&#xFF0C;&#x8981;&#x60F3;&#x4F7F;&#x7528;&#x591A;&#x7EBF;&#x7A0B;&#x505A;&#x70B9;&#x4E8B;&#x60C5;&#x9700;&#x8981;&#x81EA;&#x5DF1;&#x4E00;&#x70B9;&#x4E00;&#x70B9;&#x7684;&#x5199;&#xFF0C;&#x4E0D;&#x4EC5;&#x8D39;&#x65F6;&#xFF0C;&#x800C;&#x4E14;&#x8FD8;&#x5F88;&#x5BB9;&#x6613;&#x5199;&#x9519;&#x3002;</p>
+<p>&#x6240;&#x4EE5;<code>jdk1.5</code>&#x4E4B;&#x540E;&#x5728;&#x5BF9;&#x591A;&#x7EBF;&#x7A0B;&#x505A;&#x4E86;&#x5F88;&#x591A;&#x6539;&#x8FDB;&#x3002;</p>
+<p>&#xFF08;1&#xFF09;&#x5B89;&#x5168;&#x4E0A;</p>
+<ul>
+<li><code>jdk1.6</code>&#x4F18;&#x5316;&#x4E86;<code>synchronized</code>&#xFF0C;&#x8BA9;&#x4F7F;&#x7528;&#x9501;&#x4E0D;&#x518D;&#x975E;&#x5E38;&#x6C89;&#x91CD;&#xFF1B;</li>
+<li>&#x63D0;&#x4F9B;&#x66F4;&#x591A;&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#x7684;&#x5BB9;&#x5668;&#xFF0C;&#x5982;&#xFF1A;<code>AtomicXXX</code>&#x3001;<code>ConcurrentHashMap</code>&#x3001;<code>LinkedBlockingQueue</code>&#x7B49;&#x7B49;</li>
+</ul>
+<p>&#xFF08;2&#xFF09;&#x534F;&#x540C;&#x4E0A;</p>
+<ul>
+<li>&#x63D0;&#x4F9B;&#x65B0;&#x7684;&#x534F;&#x540C;&#x673A;&#x5236;&#xFF1A;<code>Lock</code>&#x4E0E;<code>Condidtion</code></li>
+<li><p>&#x63D0;&#x9AD8;&#x5728;&#x7279;&#x5B9A;&#x573A;&#x666F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x7684;&#x9501;&#xFF0C;&#x5982;&#xFF1A;<code>CountDownLatch</code>&#x3001;<code>Semaphore</code>&#x3001;<code>CyclicBarrier</code></p>
+</li>
+<li><p>&#x63D0;&#x9AD8;&#x7EBF;&#x7A0B;&#x6C60;&#xFF0C;&#x5982;&#xFF1A;<code>Executor</code>&#x3001;<code>ThreadPoolExecutor</code>&#x3001;<code>ForkJoinPool</code>&#x7B49;&#x7B49;</p>
+</li>
+<li><p>&#x63D0;&#x9AD8;&#x76F4;&#x63A5;&#x83B7;&#x53D6;&#x7EBF;&#x7A0B;&#x8FD4;&#x56DE;&#x503C;&#x7684;<code>Api</code>&#xFF0C;&#x5982;&#xFF1A;<code>Callable</code>&#x3001;<code>Future</code></p>
+</li>
+</ul>
+<p>&#x4E0A;&#x8FF0;&#x5927;&#x591A;&#x6570;&#x7684;<code>API</code>&#x90FD;&#x662F;&#x6765;&#x81EA;&#x4E8E;<code>JUC</code>&#x5305;&#x3002;</p>
+<p>&#x603B;&#x7684;&#x6765;&#x8BF4;&#xFF0C;<code>java</code>&#x540E;&#x671F;&#x5BF9;&#x591A;&#x7EBF;&#x7A0B;&#x505A;&#x4E86;&#x4FE9;&#x4E2A;&#x4F18;&#x5316;&#xFF1A;</p>
+<ul>
+<li>&#x6027;&#x80FD;&#xFF1A;&#x4F7F;&#x7528;<code>CAS</code>&#x3001;&#x4E50;&#x89C2;&#x9501;&#x6765;&#x4EE3;&#x66FF;&#x4E4B;&#x524D;&#x83B7;&#x53D6;&#x9501;&#xFF1B;&#x4F18;&#x5316;<code>synchronized</code></li>
+<li>&#x4F7F;&#x7528;&#xFF1A;&#x63D0;&#x9AD8;&#x66F4;&#x591A;&#x7684;&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#x5BB9;&#x5668;&#xFF1B;&#x589E;&#x52A0;&#x5728;&#x7279;&#x6B8A;&#x573A;&#x666F;&#x4E0B;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6848;</li>
+</ul>
+<h2 id="&#x4E8C;&#x3001;juc&#x5305;">&#x4E8C;&#x3001;JUC&#x5305;</h2>
+<h4 id="1&#x3001;&#x4E3A;&#x4EC0;&#x4E48;&#x9700;&#x8981;juc">1&#x3001;&#x4E3A;&#x4EC0;&#x4E48;&#x9700;&#x8981;JUC</h4>
+<ul>
+<li><code>synchronized</code>&#x6027;&#x80FD;&#x4E0D;&#x9AD8;&#xFF1B;</li>
+</ul>
+<p>&#x4E3B;&#x8981;&#x662F;&#x9488;&#x5BF9;&#x4E8E;<code>jdk1.6</code>&#x4EE5;&#x524D;&#xFF1B;&#x8FD8;&#x6709;&#x50CF;<code>HashTable</code>&#x3001;<code>SynchronizedMap</code>&#x8FD9;&#x79CD;&#x7C97;&#x66B4;&#x7684;&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#x5B9E;&#x73B0;&#x5BB9;&#x5668;</p>
+<ul>
+<li>&#x7B49;&#x5F85;&#x5524;&#x9192;&#x673A;&#x5236;&#x592A;&#x539F;&#x59CB;&#x4E86;&#xFF0C;&#x96BE;&#x7528;&#xFF1B;</li>
+</ul>
+<p>&#x6BD4;&#x5982;&#x8BF4;&#x591A;&#x4E2A;&#x7EBF;&#x7A0B;&#x4E4B;&#x95F4;&#x5728;&#x591A;&#x4E2A;&#x4E8B;&#x4EF6;&#x4E0B;&#x7684;&#x534F;&#x4F5C;&#xFF0C;&#x8FD9;&#x65F6;&#x5019;&#x5C31;&#x9700;&#x8981;&#x52A0;&#x5F88;&#x591A;&#x9501;&#x3002;</p>
+<ul>
+<li>&#x4E0D;&#x591F;&#x7075;&#x6D3B;</li>
+</ul>
+<p>&#x5047;&#x8BBE;&#x4F60;&#x9700;&#x8981;&#x5728;&#x67D0;&#x4E2A;&#x7C7B;&#x52A0;&#x9501;&#xFF0C;&#x67D0;&#x4E2A;&#x7C7B;&#x89E3;&#x9501;&#x7684;&#x8BDD;&#xFF0C;<code>synchronized</code>&#x662F;&#x65E0;&#x6CD5;&#x505A;&#x5230;&#x7684;&#x3002;&#x56E0;&#x4E3A;<code>synchronized</code>&#x53EA;&#x80FD;&#x9488;&#x5BF9;&#x4E00;&#x4E2A;&#x7C7B;&#x7684;&#x67D0;&#x4E9B;&#x4EE3;&#x7801;&#x8FDB;&#x884C;&#x52A0;&#x9501;&#x548C;&#x89E3;&#x9501;&#x3002;</p>
+<p>&#x4E3A;&#x6B64;&#xFF0C;<code>jdk1.5</code>&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5F15;&#x5165;&#x4E86;<code>com.java.util.Concurrent</code>&#x5305;&#x3002;</p>
+<ul>
+<li>&#x63D0;&#x9AD8;&#x4E86;&#x6027;&#x80FD;&#xFF1A;&#x4F7F;&#x7528;&#x4E86;<code>CAS</code></li>
+<li>&#x63D0;&#x4F9B;&#x4E86;&#x5728;&#x591A;&#x79CD;&#x573A;&#x666F;&#x4E0B;&#x66F4;&#x65B9;&#x4FBF;&#x7684;&#x5B9E;&#x73B0;</li>
+</ul>
+<p>&#x5305;&#x4E2D;&#x5927;&#x591A;&#x6570;&#x4F7F;&#x7528;<code>CAS</code>&#x548C;&#x4E50;&#x89C2;&#x9501;&#x8FBE;&#x5230;&#x540C;&#x6B65;&#x76EE;&#x7684;&#x3002;</p>
+<h4 id="atomic&#x7C7B;&#x8BE6;&#x89E3;">Atomic&#x7C7B;&#x8BE6;&#x89E3;</h4>
+<p>&#x4E3B;&#x8981;&#x662F;&#x63D0;&#x4F9B;&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#x7684;&#x5BB9;&#x5668;</p>
+<ul>
+<li>AtomicInteger&#x3001;AtomicBoolean&#x3001;AtomicLong&#x3001;AtomicReference</li>
+<li>&#x5168;&#x90E8;&#x90FD;&#x662F;CAS&#xFF0C;&#x63D0;&#x9AD8;&#x6027;&#x80FD;</li>
+<li>AtomicXXX&#x7684;&#x989D;&#x5916;&#x7528;&#x9014;&#xFF1A;&#x5F53;&#x4F5C;&#x5BB9;&#x5668;&#xFF0C;&#x4EE5;&#x89C4;&#x907F;&#x5728;java&#x5728;&#x533F;&#x540D;&#x5185;&#x90E8;&#x7C7B;&#x548C;Lambda&#x6240;&#x505A;&#x7684;&#x8BED;&#x8A00;&#x9650;&#x5236;</li>
+</ul>
+<h5 id="atomic&#x6240;&#x89E3;&#x51B3;&#x7684;&#x533F;&#x540D;&#x5185;&#x90E8;&#x7C7B;&#x7684;&#x95EE;&#x9898;">Atomic&#x6240;&#x89E3;&#x51B3;&#x7684;&#x533F;&#x540D;&#x5185;&#x90E8;&#x7C7B;&#x7684;&#x95EE;&#x9898;</h5>
+<p>1&#x3001;&#x4E3A;&#x4EC0;&#x4E48;&#x533F;&#x540D;&#x5185;&#x90E8;&#x7C7B;&#x8981;&#x6709;final&#x9650;&#x5236;&#xFF1F;</p>
+<ul>
+<li>&#x907F;&#x514D;&#x7528;&#x6237;&#x4EE5;&#x4E3A;&#x8FBE;&#x5230;&#x4EC0;&#x4E48;&#x76EE;&#x7684;</li>
+<li>&#x9632;&#x6B62;&#x7834;&#x574F;&#x7EBF;&#x7A0B;&#x6A21;&#x578B;</li>
+</ul>
+<p>2&#x3001;&#x89E3;&#x51B3;&#x7684;&#x539F;&#x7406;</p>
+<h4 id="lock&#x4E0E;condition">Lock&#x4E0E;Condition</h4>
+<p>1&#x3001;&#x89E3;&#x51B3;&#x7684;&#x95EE;&#x9898; 
+Lock - &#x89E3;&#x51B3;&#x540C;&#x6B65;&#x95EE;&#x9898; - &#x4EE3;&#x66FF;synchorized 
+Condition - &#x89E3;&#x51B3;&#x534F;&#x540C;&#x95EE;&#x9898; - &#x4EE3;&#x66FF;wait&#x3001;notify</p>
+<p>Lock&#x7684;&#x89E3;&#x51B3;&#x7684;&#x95EE;&#x9898;&#xFF1A; 
+&#xFF08;1&#xFF09;&#x5F53;&#x4E00;&#x4E2A;&#x4E1A;&#x52A1;&#x6D41;&#x7A0B;&#x975E;&#x5E38;&#x957F;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6211;&#x4EEC;&#x62C6;&#x6210;&#x51E0;&#x4E2A;&#x7C7B;&#x6765;&#x5B8C;&#x6210;&#x3002;&#x800C;synchronized&#x65E0;&#x6CD5;&#x505A;&#x5230;&#x5728;&#x591A;&#x4E2A;&#x7C7B;&#x7684;&#x4EE3;&#x7801;&#x5757;&#x4E2D;&#x540C;&#x6B65;&#x3002; 
+&#xFF08;2&#xFF09;&#x4E00;&#x4E2A;&#x9501;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x7B49;&#x5F85;&#x961F;&#x5217;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x5B83;&#x53EA;&#x80FD;&#x5B8C;&#x6210;&#x4E00;&#x4EF6;&#x4E8B;&#x60C5;&#x7684;&#x534F;&#x540C;&#xFF1B; 
+&#xFF08;3&#xFF09;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x8BFB;&#x5199;&#x5206;&#x79BB;&#xFF1B;&#x6BD4;&#x5982;&#x6709;10&#x4E2A;&#x7EBF;&#x7A0B;&#x5728;&#x8FDB;&#x884C;&#x8BFB;&#x5199;&#x64CD;&#x4F5C;&#xFF0C;&#x5F53;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x5728;&#x6267;&#x884C;&#x5199;&#x64CD;&#x4F5C;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5C31;&#x6CA1;&#x6709;&#x5FC5;&#x8981;&#x4F7F;&#x7528;synchorized&#xFF0C;&#x4F46;synchorized&#x65E0;&#x6CD5;&#x505A;&#x5230;&#x8FD9;&#x4E00;&#x70B9;&#xFF1B; 
+&#xFF08;4&#xFF09;tryLock&#xFF1B;synchronized&#x65E0;&#x6CD5;&#x505A;&#x5230;&#x5F53;&#x9501;&#x88AB;&#x5176;&#x4ED6;&#x7EBF;&#x7A0B;&#x83B7;&#x53D6;&#x65F6;&#xFF0C;&#x8FD9;&#x4E2A;&#x7EBF;&#x7A0B;&#x53EA;&#x80FD;&#x963B;&#x585E;&#xFF0C;&#x4E0D;&#x80FD;&#x53BB;&#x505A;&#x5176;&#x4ED6;&#x4EBA;&#xFF1B; 
+&#xFF08;5&#xFF09;&#x53EF;&#x4EE5;&#x65B9;&#x4FBF;&#x7684;&#x5B9E;&#x73B0;&#x66F4;&#x52A0;&#x7075;&#x6D3B;&#x7684;&#x4F18;&#x5148;&#x7EA7;&#x3001;&#x516C;&#x5E73;&#x6027;&#xFF1B;&#x5373;&#x516C;&#x5E73;&#x9501;&#x548C;&#x975E;&#x516C;&#x5E73;&#x9501;</p>
+<p>3&#x3001;&#x5E38;&#x89C1;&#x7684;&#x5B9E;&#x73B0;</p>
+<ul>
+<li><p>&#x53EF;&#x91CD;&#x5165;&#x9501;&#xFF1A;ReentrantLock</p>
+<p>&#x53EF;&#x591A;&#x6B21;&#x52A0;&#x9501;&#x3001;&#x89E3;&#x9501;&#xFF1B;&#x4EE5;&#x8FBE;&#x5230;&#x4E0B;&#x9762;&#x8FD9;&#x79CD;&#x6548;&#x679C;&#xFF1B; </p>
+</li>
+</ul>
+<h3 id="&#x9501;&#x76F8;&#x5173;">&#x9501;&#x76F8;&#x5173;</h3>
+<h4 id="countdownlatch&#xFF1A;&#x5012;&#x6570;&#x62C6;&#x9500;&#x9501;">CountDownLatch&#xFF1A;&#x5012;&#x6570;&#x62C6;&#x9500;&#x9501;</h4>
+<p>1&#x3001;&#x4F7F;&#x7528;&#x573A;&#x666F; 
+&#x5047;&#x8BBE;&#x4E00;&#x4E2A;&#x4E3B;&#x7EBF;&#x7A0B;&#x4F1A;&#x751F;&#x6210;&#x4E94;&#x4E2A;&#x7EBF;&#x7A0B;&#xFF0C;&#x53EA;&#x6709;&#x5F53;&#x4E94;&#x4E2A;&#x5B50;&#x7EBF;&#x7A0B;&#x90FD;&#x6267;&#x884C;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x4E3B;&#x7EBF;&#x7A0B;&#x624D;&#x63A5;&#x7740;&#x6267;&#x884C;&#x3002; </p>
+<p><img src="images/&#x5012;&#x6570;&#x62C6;&#x9500;&#x9501;.png" alt="1574649305587"></p>
+<p>2&#x3001;&#x4ECB;&#x7ECD; 
+&#xFF08;1&#xFF09;&#x5012;&#x6570;&#x95ED;&#x9501; 
+&#xFF08;2&#xFF09;&#x7528;&#x4E8E;&#x534F;&#x8C03;&#x4E00;&#x7EC4;&#x7EBF;&#x7A0B;&#x7684;&#x5DE5;&#x4F5C; 
+&#xFF08;3&#xFF09;&#x7B80;&#x5355;&#x3001;&#x660E;&#x4E86;&#x3001;&#x7C97;&#x66B4;&#x7684;API</p>
+<ul>
+<li>countDown();</li>
+<li>await()</li>
+</ul>
+<p>3&#x3001;&#x9762;&#x8BD5;&#x9898;&#xFF1A;&#x5199;&#x4E00;&#x4E2A;&#x4EE3;&#x7801;&#xFF0C;&#x8BA9;&#x7A0B;&#x5E8F;&#x6C38;&#x8FDC;&#x963B;&#x585E;&#x4F4F; 
+&#x6CE8;&#x610F;&#xFF1A;&#x8FD9;&#x91CC;&#x4E0D;&#x80FD;&#x662F;&#x6B7B;&#x5FAA;&#x73AF;</p>
+<pre><code class="lang-java">CountDownLatch demo = <span class="hljs-keyword">new</span> CountDownLatch(<span class="hljs-number">2</span>);
+demo.await();
+</code></pre>
+<h4 id="cyclicbarrier&#xFF1A;&#x53EF;&#x4EE5;&#x5FAA;&#x73AF;&#x4F7F;&#x7528;&#x7684;&#x5C4F;&#x969C;">CyclicBarrier&#xFF1A;&#x53EF;&#x4EE5;&#x5FAA;&#x73AF;&#x4F7F;&#x7528;&#x7684;&#x5C4F;&#x969C;</h4>
+<p>1&#x3001;&#x4EC0;&#x4E48;&#x662F;Cyclic&#xFF1F; 
+&#x5FAA;&#x73AF;&#x7684; 
+2&#x3001;&#x4EC0;&#x4E48;&#x662F;Barrier&#xFF1F; 
+&#x5C4F;&#x969C;&#x3001;&#x969C;&#x788D; 
+3&#x3001;&#x4F7F;&#x7528;&#x573A;&#x666F; 
+&#x8BA9;&#x591A;&#x4E2A;&#x7EBF;&#x7A0B;&#x5728;&#x67D0;&#x4E2A;&#x5730;&#x65B9;&#x7B49;&#x5F85;&#xFF0C;&#x4E00;&#x8D77;&#x7ED3;&#x675F;&#x3002;&#x6BD4;&#x5982;&#x8BF4;&#x8BA9;&#x591A;&#x4E2A;&#x7EBF;&#x7A0B;&#x5728;&#x67D0;&#x4E2A;&#x65F6;&#x523B;&#x518D;&#x4E00;&#x8D77;&#x7ED3;&#x675F;&#x3002; </p>
+<h4 id="semaphore">Semaphore</h4>
+<p>&#x4FE1;&#x53F7;&#x91CF;&#x3002; 
+1&#x3001;&#x4F7F;&#x7528;&#x573A;&#x666F; 
+&#x5047;&#x8BBE;&#x4F60;&#x6709;10&#x4E2A;&#x7EBF;&#x7A0B;&#xFF0C;&#x73B0;&#x5728;&#x4F60;&#x60F3;&#x540C;&#x65F6;&#x6709;&#x4FE9;&#x4E2A;&#x7EBF;&#x7A0B;&#x53EF;&#x4EE5;&#x53BB;&#x8FD0;&#x884C;&#x3002;&#x8FD9;&#x65F6;&#x5019;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x91CA;&#x653E;&#x4FE9;&#x4E2A;&#x4FE1;&#x53F7;&#x91CF;&#xFF0C;&#x8BA9;&#x7EBF;&#x7A0B;&#x53BB;&#x6355;&#x6349;&#x3002;</p>
+<p>2&#x3001;&#x4FE1;&#x53F7;&#x91CF;&#x7684;&#x83B7;&#x53D6;&#x548C;&#x91CA;&#x653E; </p>
+<h4 id="blockingqueue&#x3001;blockingdeque">BlockingQueue&#x3001;BlockingDeque</h4>
+<h4 id="&#x4E50;&#x89C2;&#x9501;&#x3001;&#x60B2;&#x89C2;&#x9501;">&#x4E50;&#x89C2;&#x9501;&#x3001;&#x60B2;&#x89C2;&#x9501;</h4>
+<p>&#x4E50;&#x89C2;&#x9501;&#xFF1A;&#x6211;&#x73B0;&#x5728;&#x8FFD;&#x4E0D;&#x5230;&#x4F60;&#xFF0C;&#x8FC7;&#x4E00;&#x4F1A;&#x518D;&#x6765;&#x95EE;&#x4E00;&#x4E0B;&#x3002;&#x6709;&#x79CD;&#x5B9E;&#x73B0;&#x65B9;&#x5F0F;&#x5C31;&#x662F;&#x81EA;&#x65CB;&#x9501;(spin lock) 
+&#x60B2;&#x89C2;&#x9501;&#xFF1A;&#x6211;&#x73B0;&#x5728;&#x8FFD;&#x4E0D;&#x5230;&#x4F60;&#xFF0C;&#x6CAE;&#x4E27;&#x81EA;&#x66B4;&#x81EA;&#x5F03;&#xFF08;&#x963B;&#x585E;&#xFF09;&#x4E86;</p>
+<blockquote>
+<p>juc&#x5305;&#x4E2D;&#x5F88;&#x591A;&#x5B9E;&#x73B0;&#x90FD;&#x53C2;&#x8003;CAS&#x548C;&#x4E50;&#x89C2;&#x9501;&#x3002;&#x6BD4;&#x5982;&#xFF1A;<code>AtomicInteger</code>&#x7684;getAndUpdate&#x65B9;&#x6CD5;</p>
+</blockquote>
+<p>&#x591A;&#x7EBF;&#x7A0B;&#x4E2D;&#x5BF9;&#x9501;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x4E00;&#x822C;&#x5206;&#x4FE9;&#x79CD;&#xFF1A;&#x4E50;&#x89C2;&#x9501;&#x3001;&#x60B2;&#x89C2;&#x9501;&#x3002;</p>
+<p>&#x7B80;&#x5355;&#x6765;&#x8BF4;&#xFF0C;&#x8FD9;&#x662F;&#x9488;&#x5BF9;&#x4E8E;&#x7EBF;&#x7A0B;&#x5BF9;&#x672A;&#x83B7;&#x53D6;&#x5230;&#x9501;&#x7684;&#x6001;&#x5EA6;&#x6765;&#x547D;&#x540D;&#x7684;&#x3002;&#x6BD4;&#x5982;&#xFF0C;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x6CA1;&#x6709;&#x83B7;&#x53D6;&#x5230;&#x9501;&#x800C;&#x8FDB;&#x5165;&#x5230;&#x963B;&#x585E;&#x72B6;&#x6001;&#x7684;&#x8BDD;&#xFF0C;&#x5C31;&#x662F;&#x60B2;&#x89C2;&#x9501;&#x3002;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x6CA1;&#x6709;&#x83B7;&#x53D6;&#x5230;&#x9501;&#xFF0C;&#x5B83;&#x4F1A;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x5FAA;&#x73AF;&#x518D;&#x6B21;&#x6765;&#x83B7;&#x53D6;&#x8FD9;&#x4E2A;&#x9501;&#xFF0C;&#x8FD9;&#x5C31;&#x662F;&#x4E50;&#x89C2;&#x9501;&#x3002;</p>
+<p><code>juc</code>&#x5305;&#x4E0B;&#x5F88;&#x591A;&#x90FD;&#x662F;&#x4E50;&#x89C2;&#x9501;&#xFF0C;&#x5176;&#x5B9E;&#x73B0;&#x662F;&#x6839;&#x636E;&#x5728;&#x5199;&#x5165;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F1A;&#x53BB;&#x6BD4;&#x8F83;&#x4E00;&#x4E0B;&#x5F53;&#x524D;&#x5199;&#x5165;&#x7684;&#x503C;&#xFF0C;&#x662F;&#x4E0D;&#x662F;&#x6211;&#x8981;&#x51C6;&#x5907;&#x5199;&#x5165;&#x7684;&#x503C;&#x3002;</p>
+<pre><code class="lang-java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getAndUpdate</span><span class="hljs-params">(IntUnaryOperator updateFunction)</span> </span>{
+    <span class="hljs-keyword">int</span> prev, next;
+    do {
+        prev = get();
+        next = updateFunction.applyAsInt(prev);
+    } <span class="hljs-keyword">while</span> (!compareAndSet(prev, next));
+    <span class="hljs-keyword">return</span> prev;
+}
+</code></pre>
+<blockquote>
+<p>&#x8FD9;&#x79CD;&#x4E0D;&#x65AD;&#x66F4;&#x65B0;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x53EF;&#x4EE5;&#x79F0;&#x4E3A;&#x81EA;&#x65CB;&#x3001;spin&#x3001;&#x4E50;&#x89C2;&#x9501;&#x3002;</p>
+</blockquote>
+<h4 id="concurrenthashmap-vs-synchronizedmap&#x3001;hashtable">ConcurrentHashMap vs SynchronizedMap&#x3001;HashTable</h4>
+<p>1&#x3001;SynchronizedMap&#x3001;HashTable 
+java1.5&#x4E4B;&#x540E;&#x5F15;&#x5165;&#x4E86;<code>ConcurrentHashMap</code>&#xFF0C;&#x7528;&#x4E8E;&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#x5F97;<code>Map</code>&#x3002;&#x4F46;&#x5728;&#x4E4B;&#x524D;&#x4F7F;&#x7528;<code>HashTable</code>&#x548C;<code>SynchronizedMap</code>&#x4E5F;&#x662F;&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#x5F97;&#xFF0C;&#x8FD9;&#x4FE9;&#x4E2A;&#x5B9E;&#x73B0;&#x7EBF;&#x7A0B;&#x65B9;&#x5F0F;&#x975E;&#x5E38;&#x7B80;&#x5355;&#x7C97;&#x66B4;&#xFF0C;&#x5C31;&#x662F;&#x5728;&#x6240;&#x6709;&#x65B9;&#x6CD5;&#x4E2D;&#x6DFB;&#x52A0;<code>synchronized</code>&#x9501;&#x3002; 
+&#x73B0;&#x5728;&#x540E;&#x9762;&#x4FE9;&#x79CD;&#x90FD;&#x4E0D;&#x63A8;&#x8350;&#x4F7F;&#x7528;&#xFF0C;&#x76F4;&#x63A5;&#x7528;<code>ConcurrentHashMap</code>&#x4EE3;&#x66FF;&#x5373;&#x53EF;&#x3002;&#x540E;&#x9762;&#x4FE9;&#x79CD;&#x662F;&#x5178;&#x578B;&#x5F97;&#x60B2;&#x89C2;&#x9501;&#x3002; 
+&#x5728;<code>Collections</code>&#x4E2D;&#x5F97;&#x5185;&#x90E8;&#x7C7B;<code>SynchronizedMap</code>&#x6709;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">final</span> Object mutex;<span class="hljs-comment">// Object on which to synchronize</span>
+</code></pre>
+<p>&#x8FD9;&#x4E2A;<code>mutex</code>&#x5176;&#x5B9E;&#x662F;<code>mutual</code> + <code>exclusive</code>&#xFF0C;&#x5373;&#x5171;&#x4EAB; + &#x6392;&#x4ED6; = &#x9501;</p>
+<p>2&#x3001;ConcurrentHashMap 
+&#x800C;<code>ConcurrentHashMap</code>&#x5C31;&#x662F;&#x65E0;&#x9501;&#x5F97;&#x5B9E;&#x73B0;&#xFF0C;&#x5176;&#x4F7F;&#x7528;<code>CAS</code>&#x548C;&#x4E50;&#x89C2;&#x9501;&#xFF0C;&#x8FBE;&#x5230;&#x540C;&#x6B65;&#x5F97;&#x76EE;&#x7684;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="synchronized在jdk1.6的优化.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: synchronized在jdk1.6的优化">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"JUC包","level":"3.1.5.2","depth":3,"next":{"title":"Callable、Future","level":"3.1.5.2.1","depth":4,"ref":"","articles":[]},"previous":{"title":"synchronized在jdk1.6的优化","level":"3.1.5.1","depth":3,"path":"multithreading/synchronized在jdk1.6的优化.md","ref":"./multithreading/synchronized在jdk1.6的优化.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"multithreading/JUC.md","mtime":"2019-11-26T08:09:45.639Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-11-26T08:24:02.919Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
